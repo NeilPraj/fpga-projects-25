@@ -1,0 +1,18 @@
+# Pin assignments for the Top module driving a 7-segment display
+
+set io_pins { \
+    "i_clk"         R20 "3.3-V LVTTL" \
+    "rst_n"         P11 "3.3-V LVTTL" \
+    "o_Seg_A"       T21 "3.3-V LVTTL" \
+    "o_Seg_B"       K25 "3.3-V LVTTL" \
+    "o_Seg_C"       M21 "3.3-V LVTTL" \
+    "o_Seg_D"       T22 "3.3-V LVTTL" \
+    "o_Seg_E"       U19 "3.3-V LVTTL" \
+    "o_Seg_F"       P8  "3.3-V LVTTL" \
+    "o_Seg_G"       R9  "3.3-V LVTTL" \
+}
+
+foreach { signal pin iostd } ${io_pins} {
+    set_location_assignment PIN_${pin} -to ${signal}
+    set_instance_assignment -name IO_STANDARD "${iostd}" -to ${signal}
+}

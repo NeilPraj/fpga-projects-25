@@ -1,0 +1,38 @@
+module Top #(
+    parameter DIVISOR = 50_000_00 // 50MHz clock,enable signal
+    parameter DIVISOR_UPDATE = 5000 // 1ms update rate
+)(
+    input logic i_clk, 
+    input logic rst_n, 
+    output logic o_Seg_A,
+    output logic o_Seg_B,
+    output logic o_Seg_C,
+    output logic o_Seg_D,
+    output logic o_Seg_E,
+    output logic o_Seg_F,
+    output logic o_Seg_G
+  
+);
+    
+
+    logic en_1hz;
+    logic en_update; 
+    logic [15:0] bcd_counter;
+    logic [1:0] digit_select;
+
+    EnableGen #(DIVISOR) u_EnableGen (
+        .clk(i_clk),
+        .rst_n(rst_n),
+        .en(en_1hz)
+    )
+
+    EnableGen #(DIVISOR_UPDATE) u_EnableGen_update (
+        .clk(i_clk),
+        .rst_n(rst_n),
+        .en(en_update)
+    );
+    
+    
+
+
+endmodule

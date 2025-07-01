@@ -1,0 +1,136 @@
+|Top
+i_clk => i_clk.IN3
+rst_n => rst_n.IN3
+o_Seg1_A << <GND>
+o_Seg1_B << <GND>
+o_Seg1_C << <GND>
+o_Seg1_D << <GND>
+o_Seg1_E << <GND>
+o_Seg1_F << <GND>
+o_Seg1_G << <GND>
+o_Seg2_A << <GND>
+o_Seg2_B << <GND>
+o_Seg2_C << <GND>
+o_Seg2_D << <GND>
+o_Seg2_E << <GND>
+o_Seg2_F << <GND>
+o_Seg2_G << <GND>
+o_Seg3_A << <GND>
+o_Seg3_B << <GND>
+o_Seg3_C << <GND>
+o_Seg3_D << <GND>
+o_Seg3_E << <GND>
+o_Seg3_F << <GND>
+o_Seg3_G << <GND>
+o_Seg4_A << <GND>
+o_Seg4_B << <GND>
+o_Seg4_C << <GND>
+o_Seg4_D << <GND>
+o_Seg4_E << <GND>
+o_Seg4_F << <GND>
+o_Seg4_G << <GND>
+
+
+|Top|EnableGen:u_EnableGen
+clk => en~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+rst_n => en~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => counter[20].ACLR
+rst_n => counter[21].ACLR
+rst_n => counter[22].ACLR
+en <= en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|EnableGen:u_EnableGen_update
+clk => en~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+rst_n => en~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+en <= en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|BCD_counter:u_BCD_counter
+clk => bcd_out[0]~reg0.CLK
+clk => bcd_out[1]~reg0.CLK
+clk => bcd_out[2]~reg0.CLK
+clk => bcd_out[3]~reg0.CLK
+rst_n => bcd_out[0]~reg0.ACLR
+rst_n => bcd_out[1]~reg0.ACLR
+rst_n => bcd_out[2]~reg0.ACLR
+rst_n => bcd_out[3]~reg0.ACLR
+en => bcd_out[0]~reg0.ENA
+en => bcd_out[3]~reg0.ENA
+en => bcd_out[2]~reg0.ENA
+en => bcd_out[1]~reg0.ENA
+bcd_out[0] <= bcd_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[1] <= bcd_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[2] <= bcd_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[3] <= bcd_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

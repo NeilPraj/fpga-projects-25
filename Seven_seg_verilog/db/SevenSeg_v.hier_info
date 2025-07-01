@@ -1,0 +1,91 @@
+|Top
+i_clk => i_clk.IN2
+rst_n => rst_n.IN1
+o_Seg_A << Binary_To_7seg:u_Binary_To_7seg.o_Seg_A
+o_Seg_B << Binary_To_7seg:u_Binary_To_7seg.o_Seg_B
+o_Seg_C << Binary_To_7seg:u_Binary_To_7seg.o_Seg_C
+o_Seg_D << Binary_To_7seg:u_Binary_To_7seg.o_Seg_D
+o_Seg_E << Binary_To_7seg:u_Binary_To_7seg.o_Seg_E
+o_Seg_F << Binary_To_7seg:u_Binary_To_7seg.o_Seg_F
+o_Seg_G << Binary_To_7seg:u_Binary_To_7seg.o_Seg_G
+
+
+|Top|Enable_1hz:u_Enable_1hz
+clk => en_1hz~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+rst_n => en_1hz~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => counter[20].ACLR
+rst_n => counter[21].ACLR
+rst_n => counter[22].ACLR
+rst_n => counter[23].ACLR
+rst_n => counter[24].ACLR
+rst_n => counter[25].ACLR
+en_1hz <= en_1hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|Binary_To_7seg:u_Binary_To_7seg
+i_clk => r_Hex_Encoding[0].CLK
+i_clk => r_Hex_Encoding[1].CLK
+i_clk => r_Hex_Encoding[2].CLK
+i_clk => r_Hex_Encoding[3].CLK
+i_clk => r_Hex_Encoding[4].CLK
+i_clk => r_Hex_Encoding[5].CLK
+i_clk => r_Hex_Encoding[6].CLK
+i_binary_num[0] => Decoder0.IN3
+i_binary_num[1] => Decoder0.IN2
+i_binary_num[2] => Decoder0.IN1
+i_binary_num[3] => Decoder0.IN0
+o_Seg_A <= r_Hex_Encoding[6].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_B <= r_Hex_Encoding[5].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_C <= r_Hex_Encoding[4].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_D <= r_Hex_Encoding[3].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_E <= r_Hex_Encoding[2].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_F <= r_Hex_Encoding[1].DB_MAX_OUTPUT_PORT_TYPE
+o_Seg_G <= r_Hex_Encoding[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

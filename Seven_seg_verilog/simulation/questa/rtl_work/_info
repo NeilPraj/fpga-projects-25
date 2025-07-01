@@ -1,0 +1,135 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/simulation/questa
+T_opt
+!s110 1750916836
+VW?FEWEPjN]OdlRBgA:6PE1
+04 6 4 work Top_tb fast 0
+=1-4c23387ccef7-685cdee4-2b-73bc
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U4 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vBinary_To_7seg
+2C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1750916835
+!i10b 1
+!s100 =o:kE<?8LZmD8bG_aN:A42
+IDLfTKihMi??cb<_37bUZ82
+S1
+R1
+w1750911225
+8C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv
+FC:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv
+!i122 0
+L0 1 46
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z7 !s108 1750916835.000000
+!s107 C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog|C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv|
+!i113 0
+Z8 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -sv -work work +incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@binary_@to_7seg
+vEnable_1hz
+2C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv
+R3
+R4
+!i10b 1
+!s100 Om2KZRS_V88;4b^VQb3aX1
+I3J4dTPT3ZS1D0Oe8GM6PD3
+S1
+R1
+w1750915964
+8C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv
+FC:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv
+!i122 1
+L0 3 32
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog|C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv|
+!i113 0
+R8
+R9
+R2
+n@enable_1hz
+vTop
+2C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv
+R3
+R4
+!i10b 1
+!s100 b`2_GPkeYRNEfDhU2zZC[3
+IRFN:V@;Bg?>FLhO7c^Kf71
+S1
+R1
+w1750916547
+8C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv
+FC:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv
+!i122 2
+L0 3 50
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog|C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv|
+!i113 0
+R8
+R9
+R2
+n@top
+vTop_tb
+2C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top_tb.sv
+R3
+R4
+!i10b 1
+!s100 ?QWez[T81B2DfD:]aP[6g3
+IF<ZGo<4AlKBzQi6cjP[gW3
+S1
+R1
+w1750916813
+8C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top_tb.sv
+FC:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top_tb.sv
+!i122 3
+L0 3 54
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog|C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top_tb.sv|
+!i113 0
+R8
+R9
+R2
+n@top_tb

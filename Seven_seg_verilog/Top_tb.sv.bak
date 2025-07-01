@@ -1,0 +1,46 @@
+//testbench
+
+`timescale 1ns / 1ps
+
+module Top_tn (
+    logic clk, 
+    logic rst_n, 
+
+    logic seg_A, 
+    logic seg_B,
+    logic seg_C,
+    logic seg_D,
+    logic seg_E,
+    logic seg_F,
+    logic seg_G
+
+    Top uut(
+        .i_clk(clk),
+        .rst_n(rst_n),
+        .o_Seg_A(seg_A),
+        .o_Seg_B(seg_B),
+        .o_Seg_C(seg_C),
+        .o_Seg_D(seg_D),
+        .o_Seg_E(seg_E),
+        .o_Seg_F(seg_F),
+        .o_Seg_G(seg_G)
+    );
+
+    always #10 clk = ~clk; // 50MHz clock
+
+    initial begin
+        //initial conditions
+        clk = 0;
+        rst_n = 0; // active low reset
+
+        #100;
+        rst_n = 1; // release reset
+
+        // run for a while to observe the output
+        #1_000_000_000;
+
+        $stop;
+    end
+);
+    
+endmodule

@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog {C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Binary_To_7seg.sv}
+vlog -sv -work work +incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog {C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Enable_1hz.sv}
+vlog -sv -work work +incdir+C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog {C:/Users/neilp/Documents/Projects_25/FPGA_STUFF/Seven_seg_verilog/Top.sv}
+
